@@ -3,7 +3,7 @@ package com.data;
 public class One {
 
 	public static void main(String[] args) {
-		int[] a = {5, 7, 4, 3, 9};
+		int[] a = {5, 2, 4, 3, 1};
 		selectionSort(a);
         for (int i = 0; i < a.length; i++) {
         	System.out.println(a[i]);
@@ -11,7 +11,7 @@ public class One {
 	}
 	
 	public static void selectionSort(int[] a) {
-		for(int i = 0; i < a.length; i++) {
+		for(int i = 0; i < a.length-1; i++) {
 			int min = i;
 			for(int j = i+1; j < a.length; j++) {
 				if(a[j] < a[min]) {
